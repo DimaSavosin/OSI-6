@@ -48,9 +48,9 @@ int main(void) {
     printf("\n=== Running ps -x from parent ===\n");
     system("ps -x");
 
-    int status;
-    waitpid(pid1, &status, 0);
-    waitpid(pid2, &status, 0);
+ 
+    waitpid(pid1, NULL, 0);
+    waitpid(pid2, NULL, 0);
 
     printf("Parent: all child processes finished\n");
 
