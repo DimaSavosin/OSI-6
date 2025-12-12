@@ -70,8 +70,7 @@ int main() {
                 read(fd[0], &term_value, sizeof(double));
                 close(fd[0]);
 
-                wait(NULL);
-
+                waitpid(pid, NULL, 0);
                 sum += term_value;
             }
             else {
