@@ -44,7 +44,6 @@ int main(void) {
     }
 
     print_info("Parent");
-    sleep(1);
 
     printf("\n=== Running ps -x from parent ===\n");
     system("ps -x");
